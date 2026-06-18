@@ -97,10 +97,10 @@ nav .nav-links{display:flex;gap:32px;list-style:none;margin:0;padding:0}
 nav .nav-links a{color:rgba(255,255,255,0.85);text-decoration:none;font-size:14px;font-family:sans-serif;transition:color .3s}
 nav .nav-links a:hover{color:#C4A97D}
 .nav-phone{position:absolute;right:48px;top:50%;transform:translateY(-50%);color:#C4A97D;text-decoration:none;font-size:14px;font-family:sans-serif;font-weight:600;white-space:nowrap}
-.nav-toggle{display:none;color:#fff;font-size:28px;cursor:pointer}
-nav{padding:0 20px}
-  @media(max-width:768px){.nav-phone{display:none}}
-  @media(max-width:768px){.nav-links{display:none;position:absolute;top:56px;left:0;right:0;background:#3E3A35;flex-direction:row;flex-wrap:nowrap;justify-content:center;padding:10px 6px;gap:2px} .nav-links li{flex:1;min-width:0;text-align:center} .nav-links a{font-size:12px;padding:8px 2px;display:block;border-radius:6px;background:rgba(255,255,255,0.06);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
+.nav-toggle{display:none;color:#fff;font-size:28px;cursor:pointer} @media(max-width:768px){.nav-toggle{display:none!important}}
+nav{padding:0 20px} @media(max-width:768px){nav{display:flex;align-items:center;gap:6px;padding:0 12px}}
+  @media(max-width:768px){.nav-phone{display:inline;position:static;font-size:11px;color:#C4A97D;margin-left:auto;padding-right:4px;white-space:nowrap} .nav-phone-text{display:none} .nav-phone-icon{display:inline;font-size:16px}} .nav-phone-text{display:none}
+  @media(max-width:768px){.nav-links{display:flex;position:static;flex-direction:row;align-items:center;gap:4px;margin:0;padding:0;background:transparent} .nav-links li{flex:none;list-style:none} .nav-links a{font-size:12px;padding:4px 4px;color:rgba(255,255,255,0.9);white-space:nowrap;background:transparent;border-radius:0} .nav-links li:last-child{display:none}}
 }
 
 /* 区块 */
@@ -644,9 +644,9 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none}
     <li><a href="#yiling" onclick="closeNav()">以岭合作</a></li>
     <li><a href="#ai" onclick="closeNav()">AI健康</a></li>
     <li><a href="#recruit" onclick="closeNav()">招贤纳士</a></li>
-    <li><a href="tel:19932598028" onclick="closeNav()">联系我们</a></li>
+    
   </ul>
-  <a href="tel:19932598028" class="nav-phone">全国服务热线：19932598028</a>
+  <a href="tel:19932598028" class="nav-phone"><span class="nav-phone-text">全国服务热线：19932598028</span><span class="nav-phone-icon">📞</span></a>
 </nav>
 
 <!-- Hero首屏 -->
