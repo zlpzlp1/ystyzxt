@@ -92,13 +92,13 @@ nav{
   background:rgba(62,80,62,0.95);backdrop-filter:blur(12px);
   padding:0 48px;height:68px;display:flex;align-items:center;justify-content:center;gap:48px
 }
-nav .logo{position:absolute;left:48px;top:50%;transform:translateY(-50%)}nav .logo img{height:36px}
+nav .logo{position:absolute;left:48px;top:50%;transform:translateY(-50%)}nav .logo img{height:36px} @media(max-width:768px){nav .logo{position:static;transform:none;flex-shrink:0} nav .logo img{height:24px}}
 nav .nav-links{display:flex;gap:32px;list-style:none;margin:0;padding:0}
 nav .nav-links a{color:rgba(255,255,255,0.85);text-decoration:none;font-size:14px;font-family:sans-serif;transition:color .3s}
 nav .nav-links a:hover{color:#C4A97D}
 .nav-phone{position:absolute;right:48px;top:50%;transform:translateY(-50%);color:#C4A97D;text-decoration:none;font-size:14px;font-family:sans-serif;font-weight:600;white-space:nowrap}
 .nav-toggle{display:none;color:#fff;font-size:28px;cursor:pointer} @media(max-width:768px){.nav-toggle{display:none!important}}
-nav{padding:0 20px} @media(max-width:768px){nav{display:flex;align-items:center;gap:6px;padding:0 12px}}
+nav{padding:0 20px} @media(max-width:768px){nav{display:flex;align-items:center;gap:4px;padding:0 8px;height:48px}}
   @media(max-width:768px){.nav-phone{display:inline;position:static;font-size:11px;color:#C4A97D;margin-left:auto;padding-right:4px;white-space:nowrap} .nav-phone-text{display:none} .nav-phone-icon{display:inline;font-size:16px}} .nav-phone-text{display:none}
   @media(max-width:768px){.nav-links{display:flex;position:static;flex-direction:row;align-items:center;gap:4px;margin:0;padding:0;background:transparent} .nav-links li{flex:none;list-style:none} .nav-links a{font-size:12px;padding:4px 4px;color:rgba(255,255,255,0.9);white-space:nowrap;background:transparent;border-radius:0} .nav-links li:last-child{display:none}}
 }
