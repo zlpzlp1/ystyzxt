@@ -8,9 +8,9 @@
 <meta name="description" content="致萱堂大健康招商加盟_以岭药业GMP专线生产药食同源植物饮（护肝养胃益生菌），院士配方指导+三甲医院临床合作，全国代理火热招募！招商热线：19932598028">
 <meta name="keywords" content="致萱堂,药食同源,张院士,以岭药业,三甲医院,健康管理,AI养生,大健康,鑫利肝舒,鑫卫舒,益高康,中药调理,体质辨识,葛根,黄精,银杏">
 <meta name="author" content="致萱堂健康科技有限公司">
-<meta name="baidu-site-verification" content="请替换为百度验证码">
-<meta name="360-site-verification" content="请替换为360验证码">
-<meta name="sogou_site_verification" content="请替换为搜狗验证码">
+
+<!-- TODO: 替换360验证码 content="xxx" -->
+<!-- TODO: 替换搜狗验证码 content="xxx" -->
 <meta property="og:title" content="致萱堂 · 院士配方指导 · AI驱动大健康">
 <meta property="og:description" content="以岭药业专线生产 · 三甲医院临床合作。三款核心产品全国招商中。">
 <meta property="og:image" content="img/logo-hero.png">
@@ -757,6 +757,34 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none}
   .product-card .card-img { height: 130px; }
   #about .section-title + div { grid-template-columns: 1fr 1fr !important; gap: 8px !important; }
 }
+
+@media (max-width: 400px) {
+  .danmaku-bar { font-size: 10px; opacity: 0.4; }
+  nav .nav-links { gap: 2px; }
+  nav .nav-links a { font-size: 11px; padding: 4px 5px; letter-spacing: 1px; }
+  .nav-phone { font-size: 9px !important; }
+  nav .logo img { height: 22px; }
+  nav { height: 44px; padding: 0 6px !important; gap: 2px; }
+}
+
+
+@media (max-width: 380px) {
+  .product-grid { grid-template-columns: 1fr !important; }
+  #about .section-title + div { grid-template-columns: 1fr !important; }
+}
+
+
+/* 移动端触摸反馈 */
+@media (pointer: coarse) {
+  .badge-card:active, .btn-primary:active, .quiz-btn:active,
+  .product-card:active, .recruit-card:active, .strength-card:active,
+  .news-card:active, .data-card:active {
+    transform: scale(0.97) !important;
+    opacity: 0.85;
+    transition: all 0.1s;
+  }
+}
+
 </style>
 <!-- SEO: all pages indexable, follow all links -->
 <!-- Sitemap: https://zhixuantang.com/sitemap.xml -->
@@ -765,7 +793,7 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none}
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!-- Google Fonts - 延迟加载，不阻塞渲染 -->
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
+<noscript></noscript>
 <script>
 (function(){
 var bp = document.createElement('script');
@@ -837,105 +865,15 @@ var _hmt = _hmt || [];
 @keyframes bounceDown{0%,100%{transform:translateY(0)}50%{transform:translateY(10px)}}
 
 /* ===== 移动端适配 (统一) ===== */
-@media (max-width: 768px) {
-  section { padding: 48px 16px; }
-  .section-title { margin-bottom: 36px; }
-  .section-title h2 { font-size: 24px; letter-spacing: 4px; }
-  .section-title p { font-size: 14px; }
 
-  /* 导航 */
-  nav { padding: 0 16px; height: 56px; }
-  nav .logo img { height: 30px; }
-  /* Hero */
-  .hero { min-height: 90vh; padding-top: 56px; }
-  .hero h1 { font-size: 28px !important; letter-spacing: 4px !important; }
-  .hero .subtitle { font-size: 13px !important; letter-spacing: 2px !important; }
-  .hero .badges { flex-direction: column; align-items: center; gap: 12px; }
-  .badge-card { min-width: auto; width: 80%; padding: 14px 20px; }
-  .hero-actions { flex-direction: column; align-items: center; }
-  .hero-actions a { width: 80%; text-align: center; }
 
-  /* 产品矩阵 */
-  .product-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-  .product-card .card-img { height: 160px; }
-  .product-card h3 { font-size: 16px; }
-  .product-card .desc { font-size: 12px; padding: 0 10px 14px; }
-  .product-card.placeholder { min-height: 200px; }
-  .product-roadmap { font-size: 13px; }
-  .honor-badge { font-size: 10px; padding: 2px 10px; }
 
-  /* 市场数据 */
-  .data-grid { grid-template-columns: 1fr; gap: 12px; }
-  .data-card { padding: 20px 16px; }
-  .data-card .number { font-size: 28px; }
 
-  /* 荣誉资质 */
-  #about .section-title + div { grid-template-columns: repeat(2, 1fr) !important; gap: 10px !important; }
-
-  /* 新闻动态 */
-  .news-grid { grid-template-columns: 1fr; gap: 16px; }
-  .news-card { padding: 16px; }
-
-  /* 核心实力 */
-  .strength-grid { grid-template-columns: 1fr; gap: 16px; }
-  .strength-card { padding: 20px 16px; }
-
-  /* 以岭合作 */
-  #yiling > div { padding: 24px 16px !important; }
-  #yiling > div > div:first-child { grid-template-columns: repeat(2, 1fr) !important; gap: 12px !important; }
-
-  /* 团队介绍 */
-  #strength + section > div { flex-direction: column; gap: 24px; }
-  #strength + section > div > div { min-width: auto; }
-  #strength + section > div img { height: 280px !important; }
-
-  /* AI健康管理流程 */
-  #ai > div:first-of-type { flex-direction: column !important; gap: 16px !important; }
-  #ai > div:first-of-type > div { min-width: auto !important; width: 100%; padding: 20px 16px !important; }
-
-  /* 招贤纳士 */
-  .recruit-grid { grid-template-columns: 1fr; gap: 16px; }
-  .recruit-card { padding: 24px 16px; }
-  .recruit-section > div:first-of-type { grid-template-columns: 1fr !important; gap: 12px !important; }
-
-  /* 战略规划 */
-  .timeline-wrapper { padding-left: 32px; }
-  .timeline-row { padding: 16px 12px; }
-  .timeline-year { font-size: 18px; }
-  .timeline-title { font-size: 14px; }
-  .timeline-value { font-size: 16px; }
-
-  /* 底部 */
-  footer { padding: 32px 16px 20px; }
-  footer .footer-grid { grid-template-columns: 1fr; gap: 24px; }
-
-  /* 弹窗 */
-  .modal-content { padding: 20px 16px; }
-  .modal-content h3 { font-size: 18px; }
-  .quiz-modal { padding: 20px 16px; }
-  .quiz-modal h3 { font-size: 18px; }
-
-  /* 其他 */
-  .dashboard-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-  .dashboard-card { padding: 16px 10px; }
-  .dashboard-value { font-size: 24px; }
-  .ancient-inner { font-size: 12px; }
-  .seal-stamp { width: 72px; height: 72px; font-size: 14px; }
-  .charity-icon { font-size: 40px; }
-  .charity-content h2 { font-size: 20px; }
-  .flow-arrow { display: none; }
-  .origin-label { font-size: 9px; }
-  .origin-detail { font-size: 8px; }
-  .danmaku-bar { bottom: 12px; }
-  .sprout-container { width: 42px; height: 50px; }
-  .cert-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 10px !important; }
+@media (max-width: 380px) {
+  .product-grid { grid-template-columns: 1fr !important; }
+  #about .section-title + div { grid-template-columns: 1fr !important; }
 }
 
-@media (max-width: 480px) {
-  .product-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
-  .product-card .card-img { height: 130px; }
-  #about .section-title + div { grid-template-columns: 1fr 1fr !important; gap: 8px !important; }
-}
 </style>
 
 
@@ -948,7 +886,7 @@ var _hmt = _hmt || [];
     </p>
   </div>
 
-<div id="about"></div>
+<!-- anchor --></div>
 
 <!-- 荣誉资质 (v2.1.4) -->
   <div id="about" style="max-width:1000px;margin:0 auto;padding:60px 24px 40px">
@@ -958,129 +896,39 @@ var _hmt = _hmt || [];
     </div>
     <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px">
       <div style="text-align:center;background:#fff;border-radius:8px;box-shadow:0 2px 16px rgba(0,0,0,0.05);padding:16px 12px;transition:transform .3s,box-shadow .3s" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 6px 24px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 16px rgba(0,0,0,0.05)'">
-        <img src="img/award-quality.jpg" alt="质量信得过品牌" style="width:100%;height:auto;border-radius:4px;cursor:pointer" ondblclick="openCert('img/award-quality.jpg','质量信得过品牌')" title="双击放大">
+        <img src="img/award-quality.jpg" alt="质量信得过品牌" style="width:100%;height:auto;border-radius:4px;cursor:pointer" onclick="openCert('img/award-quality.jpg','质量信得过品牌')" title="双击放大">
         <p style="margin:8px 0 0;font-size:13px;font-weight:600;color:#3E3A35">质量信得过品牌</p>
         <p style="margin:2px 0 0;font-size:11px;color:#999"></p>
       </div>
       <div style="text-align:center;background:#fff;border-radius:8px;box-shadow:0 2px 16px rgba(0,0,0,0.05);padding:16px 12px;transition:transform .3s,box-shadow .3s" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 6px 24px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 16px rgba(0,0,0,0.05)'">
-        <img src="img/award-trust.jpg" alt="消费者信赖品牌" style="width:100%;height:auto;border-radius:4px;cursor:pointer" ondblclick="openCert('img/award-trust.jpg','消费者信赖品牌')" title="双击放大">
+        <img src="img/award-trust.jpg" alt="消费者信赖品牌" style="width:100%;height:auto;border-radius:4px;cursor:pointer" onclick="openCert('img/award-trust.jpg','消费者信赖品牌')" title="双击放大">
         <p style="margin:8px 0 0;font-size:13px;font-weight:600;color:#3E3A35">消费者信赖品牌</p>
         <p style="margin:2px 0 0;font-size:11px;color:#999"></p>
       </div>
       <div style="text-align:center;background:#fff;border-radius:8px;box-shadow:0 2px 16px rgba(0,0,0,0.05);padding:16px 12px;transition:transform .3s,box-shadow .3s" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 6px 24px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 16px rgba(0,0,0,0.05)'">
-        <img src="img/award-innovation.jpg" alt="科技创新创品牌" style="width:100%;height:auto;border-radius:4px;cursor:pointer" ondblclick="openCert('img/award-innovation.jpg','科技创新创品牌')" title="双击放大">
+        <img src="img/award-innovation.jpg" alt="科技创新创品牌" style="width:100%;height:auto;border-radius:4px;cursor:pointer" onclick="openCert('img/award-innovation.jpg','科技创新创品牌')" title="双击放大">
         <p style="margin:8px 0 0;font-size:13px;font-weight:600;color:#3E3A35">科技创新创品牌</p>
         <p style="margin:2px 0 0;font-size:11px;color:#999"></p>
       </div>
       <div style="text-align:center;background:#fff;border-radius:8px;box-shadow:0 2px 16px rgba(0,0,0,0.05);padding:16px 12px;transition:transform .3s,box-shadow .3s" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 6px 24px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 16px rgba(0,0,0,0.05)'">
-        <img src="img/award-military.jpg" alt="院士专家工作站" style="width:100%;height:auto;border-radius:4px;cursor:pointer" ondblclick="openCert('img/award-military.jpg','院士专家工作站')" title="双击放大">
+        <img src="img/award-military.jpg" alt="院士专家工作站" style="width:100%;height:auto;border-radius:4px;cursor:pointer" onclick="openCert('img/award-military.jpg','院士专家工作站')" title="双击放大">
         <p style="margin:8px 0 0;font-size:13px;font-weight:600;color:#3E3A35">院士专家工作站</p>
         <p style="margin:2px 0 0;font-size:11px;color:#999">院士专家工作站</p>
       </div>
     </div>
     <style>
-      @media(max-width:480px){#about .section-title+div{grid-template-columns:1fr!important}}
+      
     
 /* ===== 移动端适配 (统一) ===== */
-@media (max-width: 768px) {
-  section { padding: 48px 16px; }
-  .section-title { margin-bottom: 36px; }
-  .section-title h2 { font-size: 24px; letter-spacing: 4px; }
-  .section-title p { font-size: 14px; }
 
-  /* 导航 */
-  nav { padding: 0 16px; height: 56px; }
-  nav .logo img { height: 30px; }
-  /* Hero */
-  .hero { min-height: 90vh; padding-top: 56px; }
-  .hero h1 { font-size: 28px !important; letter-spacing: 4px !important; }
-  .hero .subtitle { font-size: 13px !important; letter-spacing: 2px !important; }
-  .hero .badges { flex-direction: column; align-items: center; gap: 12px; }
-  .badge-card { min-width: auto; width: 80%; padding: 14px 20px; }
-  .hero-actions { flex-direction: column; align-items: center; }
-  .hero-actions a { width: 80%; text-align: center; }
 
-  /* 产品矩阵 */
-  .product-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-  .product-card .card-img { height: 160px; }
-  .product-card h3 { font-size: 16px; }
-  .product-card .desc { font-size: 12px; padding: 0 10px 14px; }
-  .product-card.placeholder { min-height: 200px; }
-  .product-roadmap { font-size: 13px; }
-  .honor-badge { font-size: 10px; padding: 2px 10px; }
 
-  /* 市场数据 */
-  .data-grid { grid-template-columns: 1fr; gap: 12px; }
-  .data-card { padding: 20px 16px; }
-  .data-card .number { font-size: 28px; }
 
-  /* 荣誉资质 */
-  #about .section-title + div { grid-template-columns: repeat(2, 1fr) !important; gap: 10px !important; }
-
-  /* 新闻动态 */
-  .news-grid { grid-template-columns: 1fr; gap: 16px; }
-  .news-card { padding: 16px; }
-
-  /* 核心实力 */
-  .strength-grid { grid-template-columns: 1fr; gap: 16px; }
-  .strength-card { padding: 20px 16px; }
-
-  /* 以岭合作 */
-  #yiling > div { padding: 24px 16px !important; }
-  #yiling > div > div:first-child { grid-template-columns: repeat(2, 1fr) !important; gap: 12px !important; }
-
-  /* 团队介绍 */
-  #strength + section > div { flex-direction: column; gap: 24px; }
-  #strength + section > div > div { min-width: auto; }
-  #strength + section > div img { height: 280px !important; }
-
-  /* AI健康管理流程 */
-  #ai > div:first-of-type { flex-direction: column !important; gap: 16px !important; }
-  #ai > div:first-of-type > div { min-width: auto !important; width: 100%; padding: 20px 16px !important; }
-
-  /* 招贤纳士 */
-  .recruit-grid { grid-template-columns: 1fr; gap: 16px; }
-  .recruit-card { padding: 24px 16px; }
-  .recruit-section > div:first-of-type { grid-template-columns: 1fr !important; gap: 12px !important; }
-
-  /* 战略规划 */
-  .timeline-wrapper { padding-left: 32px; }
-  .timeline-row { padding: 16px 12px; }
-  .timeline-year { font-size: 18px; }
-  .timeline-title { font-size: 14px; }
-  .timeline-value { font-size: 16px; }
-
-  /* 底部 */
-  footer { padding: 32px 16px 20px; }
-  footer .footer-grid { grid-template-columns: 1fr; gap: 24px; }
-
-  /* 弹窗 */
-  .modal-content { padding: 20px 16px; }
-  .modal-content h3 { font-size: 18px; }
-  .quiz-modal { padding: 20px 16px; }
-  .quiz-modal h3 { font-size: 18px; }
-
-  /* 其他 */
-  .dashboard-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-  .dashboard-card { padding: 16px 10px; }
-  .dashboard-value { font-size: 24px; }
-  .ancient-inner { font-size: 12px; }
-  .seal-stamp { width: 72px; height: 72px; font-size: 14px; }
-  .charity-icon { font-size: 40px; }
-  .charity-content h2 { font-size: 20px; }
-  .flow-arrow { display: none; }
-  .origin-label { font-size: 9px; }
-  .origin-detail { font-size: 8px; }
-  .danmaku-bar { bottom: 12px; }
-  .sprout-container { width: 42px; height: 50px; }
-  .cert-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 10px !important; }
+@media (max-width: 380px) {
+  .product-grid { grid-template-columns: 1fr !important; }
+  #about .section-title + div { grid-template-columns: 1fr !important; }
 }
 
-@media (max-width: 480px) {
-  .product-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
-  .product-card .card-img { height: 130px; }
-  #about .section-title + div { grid-template-columns: 1fr 1fr !important; gap: 8px !important; }
-}
 </style>
   </div>
 
@@ -1295,105 +1143,15 @@ var _hmt = _hmt || [];
 
 <style>.origin-detail{font-size:8px}}
 /* ===== 移动端适配 (统一) ===== */
-@media (max-width: 768px) {
-  section { padding: 48px 16px; }
-  .section-title { margin-bottom: 36px; }
-  .section-title h2 { font-size: 24px; letter-spacing: 4px; }
-  .section-title p { font-size: 14px; }
 
-  /* 导航 */
-  nav { padding: 0 16px; height: 56px; }
-  nav .logo img { height: 30px; }
-  /* Hero */
-  .hero { min-height: 90vh; padding-top: 56px; }
-  .hero h1 { font-size: 28px !important; letter-spacing: 4px !important; }
-  .hero .subtitle { font-size: 13px !important; letter-spacing: 2px !important; }
-  .hero .badges { flex-direction: column; align-items: center; gap: 12px; }
-  .badge-card { min-width: auto; width: 80%; padding: 14px 20px; }
-  .hero-actions { flex-direction: column; align-items: center; }
-  .hero-actions a { width: 80%; text-align: center; }
 
-  /* 产品矩阵 */
-  .product-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-  .product-card .card-img { height: 160px; }
-  .product-card h3 { font-size: 16px; }
-  .product-card .desc { font-size: 12px; padding: 0 10px 14px; }
-  .product-card.placeholder { min-height: 200px; }
-  .product-roadmap { font-size: 13px; }
-  .honor-badge { font-size: 10px; padding: 2px 10px; }
 
-  /* 市场数据 */
-  .data-grid { grid-template-columns: 1fr; gap: 12px; }
-  .data-card { padding: 20px 16px; }
-  .data-card .number { font-size: 28px; }
 
-  /* 荣誉资质 */
-  #about .section-title + div { grid-template-columns: repeat(2, 1fr) !important; gap: 10px !important; }
-
-  /* 新闻动态 */
-  .news-grid { grid-template-columns: 1fr; gap: 16px; }
-  .news-card { padding: 16px; }
-
-  /* 核心实力 */
-  .strength-grid { grid-template-columns: 1fr; gap: 16px; }
-  .strength-card { padding: 20px 16px; }
-
-  /* 以岭合作 */
-  #yiling > div { padding: 24px 16px !important; }
-  #yiling > div > div:first-child { grid-template-columns: repeat(2, 1fr) !important; gap: 12px !important; }
-
-  /* 团队介绍 */
-  #strength + section > div { flex-direction: column; gap: 24px; }
-  #strength + section > div > div { min-width: auto; }
-  #strength + section > div img { height: 280px !important; }
-
-  /* AI健康管理流程 */
-  #ai > div:first-of-type { flex-direction: column !important; gap: 16px !important; }
-  #ai > div:first-of-type > div { min-width: auto !important; width: 100%; padding: 20px 16px !important; }
-
-  /* 招贤纳士 */
-  .recruit-grid { grid-template-columns: 1fr; gap: 16px; }
-  .recruit-card { padding: 24px 16px; }
-  .recruit-section > div:first-of-type { grid-template-columns: 1fr !important; gap: 12px !important; }
-
-  /* 战略规划 */
-  .timeline-wrapper { padding-left: 32px; }
-  .timeline-row { padding: 16px 12px; }
-  .timeline-year { font-size: 18px; }
-  .timeline-title { font-size: 14px; }
-  .timeline-value { font-size: 16px; }
-
-  /* 底部 */
-  footer { padding: 32px 16px 20px; }
-  footer .footer-grid { grid-template-columns: 1fr; gap: 24px; }
-
-  /* 弹窗 */
-  .modal-content { padding: 20px 16px; }
-  .modal-content h3 { font-size: 18px; }
-  .quiz-modal { padding: 20px 16px; }
-  .quiz-modal h3 { font-size: 18px; }
-
-  /* 其他 */
-  .dashboard-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-  .dashboard-card { padding: 16px 10px; }
-  .dashboard-value { font-size: 24px; }
-  .ancient-inner { font-size: 12px; }
-  .seal-stamp { width: 72px; height: 72px; font-size: 14px; }
-  .charity-icon { font-size: 40px; }
-  .charity-content h2 { font-size: 20px; }
-  .flow-arrow { display: none; }
-  .origin-label { font-size: 9px; }
-  .origin-detail { font-size: 8px; }
-  .danmaku-bar { bottom: 12px; }
-  .sprout-container { width: 42px; height: 50px; }
-  .cert-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 10px !important; }
+@media (max-width: 380px) {
+  .product-grid { grid-template-columns: 1fr !important; }
+  #about .section-title + div { grid-template-columns: 1fr !important; }
 }
 
-@media (max-width: 480px) {
-  .product-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
-  .product-card .card-img { height: 130px; }
-  #about .section-title + div { grid-template-columns: 1fr 1fr !important; gap: 8px !important; }
-}
 </style>
 <!-- 原料溯源 (v2.1.3) -->
 <section class="fade-in" style="background:#fff;padding:80px 48px;text-align:center">
@@ -1618,7 +1376,7 @@ var _hmt = _hmt || [];
   <div class="modal-content">
     <button class="modal-close" onclick="closeModal()">×</button>
     <h3 id="modalTitle"></h3>
-    <img class="modal-img" id="modalImg" src="" alt="">
+    <img class="modal-img" id="modalImg" src="img/product-placeholder.jpg" alt="更多新品">
     <div class="modal-desc" id="modalDesc"></div>
   </div>
 </div>
@@ -1755,7 +1513,7 @@ try{
     });
   },{threshold:0});
   if(productsEl)obs2.observe(productsEl);
-  setInterval(spawnParticle,1200);
+  setInterval(function(){if(window.innerWidth>768){spawnParticle()}},600);
 })();
 
 
@@ -1926,7 +1684,7 @@ document.getElementById('copyrightYear').innerHTML=document.getElementById('copy
 
 <!-- 证书放大灯箱 -->
 <div id="certLightbox" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.85);z-index:9999;align-items:center;justify-content:center;cursor:pointer" onclick="this.style.display='none'">
-  <img id="certLightboxImg" src="" style="max-width:90vw;max-height:90vh;object-fit:contain;border-radius:8px;box-shadow:0 8px 40px rgba(0,0,0,0.5)">
+  <img id="certLightboxImg" src="img/product-placeholder.jpg" style="max-width:90vw;max-height:90vh;object-fit:contain;border-radius:8px;box-shadow:0 8px 40px rgba(0,0,0,0.5)" alt="">
   <button onclick="document.getElementById('certLightbox').style.display='none'" style="position:absolute;top:20px;right:20px;background:rgba(255,255,255,0.15);color:#fff;border:none;font-size:32px;width:48px;height:48px;line-height:48px;text-align:center;border-radius:50%;cursor:pointer;font-family:sans-serif">&times;</button>
 </div>
 <script>
@@ -1967,31 +1725,5 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 <!-- ===== 隐私政策弹窗 ===== -->
-<div id="legalModal" class="modal-overlay" style="display:none;position:fixed;z-index:9999;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);align-items:center;justify-content:center;padding:20px" onclick="if(event.target===this)closeLegal()">
-  <div style="background:#fff;max-width:700px;max-height:80vh;overflow-y:auto;border-radius:8px;padding:32px;position:relative;color:#333;font-size:14px;line-height:1.8">
-    <button onclick="closeLegal()" style="position:absolute;top:12px;right:16px;background:none;border:none;font-size:24px;cursor:pointer;color:#999">&times;</button>
-    <h2 style="font-size:20px;margin-bottom:16px;color:#3E503E;border-bottom:2px solid #C4A97D;padding-bottom:8px">隐私政策 · 法律声明</h2>
-    <h3 style="font-size:15px;margin:12px 0 6px;color:#3E503E">一、隐私保护</h3>
-    <p>致萱堂健康科技有限公司（以下简称"本公司"或"致萱堂"）重视您的隐私。您通过本网站提交的任何个人信息（姓名、电话、邮箱等）仅用于招商咨询及产品服务，不会出售或分享给第三方。</p>
-    <h3 style="font-size:15px;margin:12px 0 6px;color:#3E503E">二、知识产权</h3>
-    <p>本网站所有内容（包括但不限于文字、图片、标识、数据）的知识产权归致萱堂健康科技有限公司所有。未经书面授权，任何单位或个人不得复制、转载、修改或用于商业用途。</p>
-    <h3 style="font-size:15px;margin:12px 0 6px;color:#3E503E">三、免责声明</h3>
-    <p>本网站提供的产品信息及健康资讯仅供参考，不构成医疗建议。产品为药食同源植物饮，不能替代药品。如有健康问题，请及时就医。</p>
-    <h3 style="font-size:15px;margin:12px 0 6px;color:#3E503E">四、联系方式</h3>
-    <p>如对隐私政策或本声明有任何疑问，请联系我们：</p>
-    <p>📞 19932598028<br>📍 湖南省长沙市雨花区圭塘街道万家丽中路三段157号唐湘电器城E5-16号</p>
-    <p style="margin-top:12px;font-size:12px;color:#999">更新日期：2026年6月27日</p>
-  </div>
-</div>
-<script>
-function openLegal() { document.getElementById("legalModal").style.display = "flex"; }
-function closeLegal() { document.getElementById("legalModal").style.display = "none"; }
-// Click privacy link
-document.addEventListener("DOMContentLoaded", function(){
-  var links = document.querySelectorAll("a[href='#legal']");
-  links.forEach(function(a){ a.onclick = function(e){ e.preventDefault(); openLegal(); }; });
-});
-</script>
-
 </body>
 </html>
