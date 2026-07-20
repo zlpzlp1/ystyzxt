@@ -1638,5 +1638,63 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 <!-- ===== 隐私政策弹窗 ===== -->
+
+<section class="fade-in" style="background:#F5F0E8" id="ai">
+  <div class="section-title">
+    <h2>🤖 AI健康管理</h2>
+    <p>基于九种体质辨识理论、结合药食同源产品数据库的个性化健康管理系统</p>
+  </div>
+  <div style="display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;max-width:1000px;margin:40px auto">
+    <div style="background:linear-gradient(135deg,#5B6B5A,#7A8B6E);color:#fff;border-radius:16px;padding:28px 20px 20px;text-align:center;flex:1;min-width:160px">
+      <div style="font-size:36px">📋</div>
+      <h4 style="margin:8px 0">AI体质测评</h4>
+      <div style="font-size:12px;opacity:.75;font-family:sans-serif">5-10分钟完成体质辨识<br>基于九种体质理论</div>
+      <span style="display:inline-block;background:rgba(255,255,255,0.2);border-radius:20px;padding:2px 10px;font-size:11px;margin-top:8px">5-10分钟</span>
+    </div>
+    <span class="flow-arrow"></span>
+    <div style="background:linear-gradient(135deg,#5B6B5A,#7A8B6E);color:#fff;border-radius:16px;padding:28px 20px 20px;text-align:center;flex:1;min-width:160px">
+      <div style="font-size:36px">🧠</div>
+      <h4 style="margin:8px 0">智能分析</h4>
+      <div style="font-size:12px;opacity:.75;font-family:sans-serif">气虚/阳虚/阴虚/痰湿/湿热<br>生成个性化健康档案</div>
+      <span style="display:inline-block;background:rgba(255,255,255,0.2);border-radius:20px;padding:2px 10px;font-size:11px;margin-top:8px">9种体质</span>
+    </div>
+    <span class="flow-arrow"></span>
+    <div style="background:linear-gradient(135deg,#5B6B5A,#7A8B6E);color:#fff;border-radius:16px;padding:28px 20px 20px;text-align:center;flex:1;min-width:160px">
+      <div style="font-size:36px">🎯</div>
+      <h4 style="margin:8px 0">产品匹配</h4>
+      <div style="font-size:12px;opacity:.75;font-family:sans-serif">根据体质推荐产品方案<br>用量建议与食用指导</div>
+      <span style="display:inline-block;background:rgba(255,255,255,0.2);border-radius:20px;padding:2px 10px;font-size:11px;margin-top:8px">精准匹配</span>
+    </div>
+    <span class="flow-arrow"></span>
+    <div style="background:linear-gradient(135deg,#5B6B5A,#7A8B6E);color:#fff;border-radius:16px;padding:28px 20px 20px;text-align:center;flex:1;min-width:160px">
+      <div style="font-size:36px">📈</div>
+      <h4 style="margin:8px 0">效果追踪</h4>
+      <div style="font-size:12px;opacity:.75;font-family:sans-serif">建立长期健康档案<br>动态调整方案建议</div>
+      <span style="display:inline-block;background:rgba(255,255,255,0.2);border-radius:20px;padding:2px 10px;font-size:11px;margin-top:8px">持续追踪</span>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:40px">
+    
+  <div style="text-align:center;margin-top:40px">
+    <button onclick="openQuiz()" class="quiz-btn" style="font-size:16px;padding:16px 56px;letter-spacing:3px">🔬 免费体验AI健康测评</button>
+  </div>
+  <!-- AI测评弹窗 -->
+  <div class="quiz-modal-overlay" id="quizModal">
+    <div class="quiz-modal">
+      <button class="modal-close" onclick="closeQuiz()">×</button>
+      <h3>AI 体质辨识测评</h3>
+      <div class="quiz-progress"><div class="quiz-progress-bar" id="quizProgress"></div></div>
+      <div id="quizSteps"></div>
+      <div class="quiz-result" id="quizResult">
+        <p style="font-size:16px;color:#555">根据九种体质理论分析，您的体质偏</p>
+        <div class="tizhi" id="resultTizhi"></div>
+        <div class="recommend" id="resultRec"></div>
+        <p style="font-size:12px;color:#999;margin-top:8px">⚠️ 本测评参考传统养生理论，不作为诊疗依据</p>
+        <button onclick="closeQuiz()" class="quiz-btn secondary">关闭</button>
+      </div>
+    </div>
+  </div>
+
+</section>
 </body>
 </html>
